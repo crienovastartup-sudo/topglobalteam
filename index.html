@@ -258,7 +258,7 @@
                                 <span id="prop-progress-badge" class="text-3xl font-black text-blue-600 leading-none">0.00%</span>
                             </div>
                             <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center font-bold">
-                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138z"></path></svg>
                             </div>
                         </div>
                     </div>
@@ -403,7 +403,7 @@
 
     <!-- Script de Gestão de Dados e Inicialização -->
     <script>
-        // Dados das 7 propriedades iniciais
+        // Dados das 7 propriedades iniciais atualizados conforme extratos oficiais do RBI Bank
         let portfolioData = {
             "1462 Dufferin Ave": [
                 {seq: 1, desc: "Project/Site Management", budgeted: 5500, authorized: 2365, available: 3135, pct: 43},
@@ -412,13 +412,13 @@
                 {seq: 4, desc: "Foundation", budgeted: 27300, authorized: 27300, available: 0, pct: 100},
                 {seq: 5, desc: "Steam Wall", budgeted: 1500, authorized: 1500, available: 0, pct: 100},
                 {seq: 6, desc: "Masonry & Framing", budgeted: 14900, authorized: 14155, available: 745, pct: 95},
-                {seq: 7, desc: "Roof (including soffit/fascia & gutters)", budgeted: 10200, authorized: 5100, available: 5100, pct: 50},
+                {seq: 7, desc: "Roof (including soffit/fascia & gutters)", budgeted: 10200, authorized: 0, available: 10200, pct: 0},
                 {seq: 8, desc: "Exterior/Siding/Stucco", budgeted: 9200, authorized: 0, available: 9200, pct: 0},
                 {seq: 9, desc: "Windows/Exterior Doors", budgeted: 6100, authorized: 0, available: 6100, pct: 0},
                 {seq: 10, desc: "Plumbing - Underslab", budgeted: 4500, authorized: 4500, available: 0, pct: 100},
                 {seq: 11, desc: "Plumbing - Rough", budgeted: 9500, authorized: 9500, available: 0, pct: 100},
                 {seq: 12, desc: "Plumbing - Finish", budgeted: 3600, authorized: 0, available: 3600, pct: 0},
-                {seq: 13, desc: "Electrical - Rough", budgeted: 9400, authorized: 8650, available: 750, pct: 92.02},
+                {seq: 13, desc: "Electrical - Rough", budgeted: 9400, authorized: 5545.80, available: 3854.20, pct: 58.99},
                 {seq: 14, desc: "Electrical  - Finish/Fixtures", budgeted: 2700, authorized: 0, available: 2700, pct: 0},
                 {seq: 15, desc: "HVAC - Rough", budgeted: 10800, authorized: 10800, available: 0, pct: 100},
                 {seq: 16, desc: "HVAC - Finish", budgeted: 3000, authorized: 0, available: 3000, pct: 0},
@@ -437,7 +437,7 @@
                 {seq: 29, desc: "Pavers Driveway", budgeted: 8900, authorized: 0, available: 8900, pct: 0},
                 {seq: 30, desc: "Landscaping", budgeted: 6300, authorized: 0, available: 6300, pct: 0},
                 {seq: 31, desc: "Final Clean", budgeted: 400, authorized: 0, available: 400, pct: 0},
-                {seq: 32, desc: "Contingency", budgeted: 15260, authorized: 6561.80, available: 8698.20, pct: 43}
+                {seq: 32, desc: "Contingency", budgeted: 494, authorized: 0, available: 494, pct: 0}
             ],
             "3245 Pericles Ave": [
                 {seq: 1, desc: "Project/Site Management", budgeted: 5500, authorized: 3205, available: 2295, pct: 58.27},
@@ -446,9 +446,9 @@
                 {seq: 4, desc: "Foundation", budgeted: 27300, authorized: 27300, available: 0, pct: 100},
                 {seq: 5, desc: "Steam Wall", budgeted: 1500, authorized: 1500, available: 0, pct: 100},
                 {seq: 6, desc: "Masonry & Framing", budgeted: 14900, authorized: 14155, available: 745, pct: 95},
-                {seq: 7, desc: "Roof (including soffit/fascia & gutters)", budgeted: 10200, authorized: 8200, available: 2000, pct: 80.39},
+                {seq: 7, desc: "Roof (including soffit/fascia & gutters)", budgeted: 10200, authorized: 5248.48, available: 4951.52, pct: 51.46},
                 {seq: 8, desc: "Exterior/Siding/Stucco", budgeted: 9200, authorized: 0, available: 9200, pct: 0},
-                {seq: 9, desc: "Windows/Exterior Doors", budgeted: 6100, authorized: 4575, available: 1525, pct: 75},
+                {seq: 9, desc: "Windows/Exterior Doors", budgeted: 6100, authorized: 0, available: 6100, pct: 0},
                 {seq: 10, desc: "Plumbing - Underslab", budgeted: 4500, authorized: 4500, available: 0, pct: 100},
                 {seq: 11, desc: "Plumbing - Rough", budgeted: 9500, authorized: 9500, available: 0, pct: 100},
                 {seq: 12, desc: "Plumbing - Finish", budgeted: 3600, authorized: 0, available: 3600, pct: 0},
@@ -471,7 +471,7 @@
                 {seq: 29, desc: "Pavers Driveway", budgeted: 7900, authorized: 0, available: 7900, pct: 0},
                 {seq: 30, desc: "Landscaping", budgeted: 5300, authorized: 0, available: 5300, pct: 0},
                 {seq: 31, desc: "Final Clean", budgeted: 400, authorized: 0, available: 400, pct: 0},
-                {seq: 32, desc: "Contingency", budgeted: 24440, authorized: 11413.48, available: 13026.52, pct: 46.7}
+                {seq: 32, desc: "Contingency", budgeted: 5500, authorized: 0, available: 5500, pct: 0}
             ],
             "3265 Pericles Ave": [
                 {seq: 1, desc: "Project/Site Management", budgeted: 5500, authorized: 3080, available: 2420, pct: 56},
@@ -480,9 +480,9 @@
                 {seq: 4, desc: "Foundation", budgeted: 27300, authorized: 27300, available: 0, pct: 100},
                 {seq: 5, desc: "Steam Wall", budgeted: 1500, authorized: 1500, available: 0, pct: 100},
                 {seq: 6, desc: "Masonry & Framing", budgeted: 14900, authorized: 14155, available: 745, pct: 95},
-                {seq: 7, desc: "Roof (including soffit/fascia & gutters)", budgeted: 10200, authorized: 8200, available: 2000, pct: 80.39},
+                {seq: 7, desc: "Roof (including soffit/fascia & gutters)", budgeted: 10200, authorized: 6101.40, available: 4098.60, pct: 59.82},
                 {seq: 8, desc: "Exterior/Siding/Stucco", budgeted: 9200, authorized: 0, available: 9200, pct: 0},
-                {seq: 9, desc: "Windows/Exterior Doors", budgeted: 6100, authorized: 4575, available: 1525, pct: 75},
+                {seq: 9, desc: "Windows/Exterior Doors", budgeted: 6100, authorized: 0, available: 6100, pct: 0},
                 {seq: 10, desc: "Plumbing - Underslab", budgeted: 4500, authorized: 4500, available: 0, pct: 100},
                 {seq: 11, desc: "Plumbing - Rough", budgeted: 9500, authorized: 9500, available: 0, pct: 100},
                 {seq: 12, desc: "Plumbing - Finish", budgeted: 3600, authorized: 0, available: 3600, pct: 0},
@@ -505,7 +505,7 @@
                 {seq: 29, desc: "Pavers Driveway", budgeted: 8900, authorized: 0, available: 8900, pct: 0},
                 {seq: 30, desc: "Landscaping", budgeted: 6300, authorized: 0, available: 6300, pct: 0},
                 {seq: 31, desc: "Final Clean", budgeted: 400, authorized: 0, available: 400, pct: 0},
-                {seq: 32, desc: "Contingency", budgeted: 24940, authorized: 11472.40, available: 13467.60, pct: 46}
+                {seq: 32, desc: "Contingency", budgeted: 6794, authorized: 0, available: 6794, pct: 0}
             ],
             "5126 Aberback St": [
                 {seq: 1, desc: "Project/Site Management", budgeted: 5500, authorized: 1540, available: 3960, pct: 28},
@@ -513,11 +513,11 @@
                 {seq: 3, desc: "Ground Elevation", budgeted: 18100, authorized: 18100, available: 0, pct: 100},
                 {seq: 4, desc: "Foundation", budgeted: 27300, authorized: 27300, available: 0, pct: 100},
                 {seq: 5, desc: "Steam Wall", budgeted: 1500, authorized: 1500, available: 0, pct: 100},
-                {seq: 6, desc: "Masonry & Framing", budgeted: 14900, authorized: 14155, available: 745, pct: 95},
-                {seq: 7, desc: "Roof (including soffit/fascia & gutters)", budgeted: 10200, authorized: 4080, available: 6120, pct: 40},
+                {seq: 6, desc: "Masonry & Framing", budgeted: 14900, authorized: 0, available: 14900, pct: 0},
+                {seq: 7, desc: "Roof (including soffit/fascia & gutters)", budgeted: 10200, authorized: 0, available: 10200, pct: 0},
                 {seq: 8, desc: "Exterior/Siding/Stucco", budgeted: 9200, authorized: 0, available: 9200, pct: 0},
                 {seq: 9, desc: "Windows/Exterior Doors", budgeted: 6100, authorized: 0, available: 6100, pct: 0},
-                {seq: 10, desc: "Plumbing - Underslab", budgeted: 4500, authorized: 4500, available: 0, pct: 100},
+                {seq: 10, desc: "Plumbing - Underslab", budgeted: 4500, authorized: 4486.20, available: 13.80, pct: 99.69},
                 {seq: 11, desc: "Plumbing - Rough", budgeted: 9500, authorized: 0, available: 9500, pct: 0},
                 {seq: 12, desc: "Plumbing - Finish", budgeted: 3600, authorized: 0, available: 3600, pct: 0},
                 {seq: 13, desc: "Electrical - Rough", budgeted: 9400, authorized: 0, available: 9400, pct: 0},
@@ -539,22 +539,22 @@
                 {seq: 29, desc: "Pavers Driveway", budgeted: 8900, authorized: 0, available: 8900, pct: 0},
                 {seq: 30, desc: "Landscaping", budgeted: 6300, authorized: 0, available: 6300, pct: 0},
                 {seq: 31, desc: "Final Clean", budgeted: 400, authorized: 0, available: 400, pct: 0},
-                {seq: 32, desc: "Contingency", budgeted: 26040, authorized: 7291.20, available: 18748.80, pct: 28}
+                {seq: 32, desc: "Contingency", budgeted: 500, authorized: 0, available: 500, pct: 0}
             ],
             "5674 Gadshaw Ave": [
                 {seq: 1, desc: "Project/Site Management", budgeted: 5500, authorized: 1210, available: 4290, pct: 22},
                 {seq: 2, desc: "Site Prep: Grading/Excavation", budgeted: 8700, authorized: 8700, available: 0, pct: 100},
                 {seq: 3, desc: "Ground Elevation", budgeted: 18100, authorized: 18100, available: 0, pct: 100},
-                {seq: 4, desc: "Foundation", budgeted: 27300, authorized: 27300, available: 0, pct: 100},
-                {seq: 5, desc: "Steam Wall", budgeted: 1500, authorized: 1500, available: 0, pct: 100},
+                {seq: 4, desc: "Foundation", budgeted: 27300, authorized: 11660, available: 15640, pct: 42.71},
+                {seq: 5, desc: "Steam Wall", budgeted: 1500, authorized: 0, available: 1500, pct: 0},
                 {seq: 6, desc: "Masonry & Framing", budgeted: 14900, authorized: 0, available: 14900, pct: 0},
                 {seq: 7, desc: "Roof (including soffit/fascia & gutters)", budgeted: 10200, authorized: 0, available: 10200, pct: 0},
                 {seq: 8, desc: "Exterior/Siding/Stucco", budgeted: 9200, authorized: 0, available: 9200, pct: 0},
                 {seq: 9, desc: "Windows/Exterior Doors", budgeted: 6100, authorized: 0, available: 6100, pct: 0},
-                {seq: 10, desc: "Plumbing - Underslab", budgeted: 4500, authorized: 4500, available: 0, pct: 100},
+                {seq: 10, desc: "Plumbing - Underslab", budgeted: 4500, authorized: 0, available: 4500, pct: 0},
                 {seq: 11, desc: "Plumbing - Rough", budgeted: 9500, authorized: 0, available: 9500, pct: 0},
                 {seq: 12, desc: "Plumbing - Finish", budgeted: 3600, authorized: 0, available: 3600, pct: 0},
-                {seq: 13, desc: "Electrical - Rough", budgeted: 9400, authorized: 1000, available: 8400, pct: 10.64},
+                {seq: 13, desc: "Electrical - Rough", budgeted: 9400, authorized: 0, available: 9400, pct: 0},
                 {seq: 14, desc: "Electrical  - Finish/Fixtures", budgeted: 2700, authorized: 0, available: 2700, pct: 0},
                 {seq: 15, desc: "HVAC - Rough", budgeted: 10800, authorized: 0, available: 10800, pct: 0},
                 {seq: 16, desc: "HVAC - Finish", budgeted: 3000, authorized: 0, available: 3000, pct: 0},
@@ -566,14 +566,14 @@
                 {seq: 22, desc: "Kitchen - Countertops", budgeted: 7300, authorized: 0, available: 7300, pct: 0},
                 {seq: 23, desc: "Kitchen - Tile Work", budgeted: 1200, authorized: 0, available: 1200, pct: 0},
                 {seq: 24, desc: "Kitchen - Appliances", budgeted: 1800, authorized: 0, available: 1800, pct: 0},
-                {seq: 25, desc: "Septic Tank / Well", budgeted: 25500, authorized: 0, available: 25500, pct: 0},
+                {seq: 25, desc: "Septic Tank / Well", budgeted: 22900, authorized: 0, available: 22900, pct: 0},
                 {seq: 26, desc: "Bathroom - Tile Work", budgeted: 2300, authorized: 0, available: 2300, pct: 0},
                 {seq: 27, desc: "Bathrooom - Vanities", budgeted: 8900, authorized: 0, available: 8900, pct: 0},
                 {seq: 28, desc: "Bathroom - Fixtures", budgeted: 700, authorized: 0, available: 700, pct: 0},
                 {seq: 29, desc: "Pavers Driveway", budgeted: 8900, authorized: 0, available: 8900, pct: 0},
                 {seq: 30, desc: "Landscaping", budgeted: 6300, authorized: 0, available: 6300, pct: 0},
                 {seq: 31, desc: "Final Clean", budgeted: 400, authorized: 0, available: 400, pct: 0},
-                {seq: 32, desc: "Contingency", budgeted: 25040, authorized: 4000, available: 21040, pct: 16}
+                {seq: 32, desc: "Contingency", budgeted: 1000, authorized: 0, available: 1000, pct: 0}
             ],
             "7327 Cameo Cir": [
                 {seq: 1, desc: "Project/Site Management", budgeted: 5500, authorized: 2420, available: 3080, pct: 44},
@@ -582,11 +582,11 @@
                 {seq: 4, desc: "Foundation", budgeted: 27300, authorized: 27300, available: 0, pct: 100},
                 {seq: 5, desc: "Steam Wall", budgeted: 1500, authorized: 1500, available: 0, pct: 100},
                 {seq: 6, desc: "Masonry & Framing", budgeted: 14900, authorized: 14155, available: 745, pct: 95},
-                {seq: 7, desc: "Roof (including soffit/fascia & gutters)", budgeted: 10200, authorized: 8670, available: 1530, pct: 85},
+                {seq: 7, desc: "Roof (including soffit/fascia & gutters)", budgeted: 10200, authorized: 0, available: 10200, pct: 0},
                 {seq: 8, desc: "Exterior/Siding/Stucco", budgeted: 9200, authorized: 0, available: 9200, pct: 0},
                 {seq: 9, desc: "Windows/Exterior Doors", budgeted: 6100, authorized: 0, available: 6100, pct: 0},
                 {seq: 10, desc: "Plumbing - Underslab", budgeted: 4500, authorized: 4500, available: 0, pct: 100},
-                {seq: 11, desc: "Plumbing - Rough", budgeted: 9500, authorized: 8750, available: 750, pct: 92.1},
+                {seq: 11, desc: "Plumbing - Rough", budgeted: 9500, authorized: 8720.80, available: 779.20, pct: 91.8},
                 {seq: 12, desc: "Plumbing - Finish", budgeted: 3600, authorized: 0, available: 3600, pct: 0},
                 {seq: 13, desc: "Electrical - Rough", budgeted: 9400, authorized: 8650, available: 750, pct: 92},
                 {seq: 14, desc: "Electrical  - Finish/Fixtures", budgeted: 2700, authorized: 0, available: 2700, pct: 0},
@@ -607,7 +607,7 @@
                 {seq: 29, desc: "Pavers Driveway", budgeted: 7900, authorized: 0, available: 7900, pct: 0},
                 {seq: 30, desc: "Landscaping", budgeted: 5300, authorized: 0, available: 5300, pct: 0},
                 {seq: 31, desc: "Final Clean", budgeted: 400, authorized: 0, available: 400, pct: 0},
-                {seq: 32, desc: "Contingency", budgeted: 23570, authorized: 10370.80, available: 13199.20, pct: 44}
+                {seq: 32, desc: "Contingency", budgeted: 5500, authorized: 0, available: 5500, pct: 0}
             ],
             "7850 Grafton Rd": [
                 {seq: 1, desc: "Project/Site Management", budgeted: 5500, authorized: 2530, available: 2970, pct: 46},
@@ -616,9 +616,9 @@
                 {seq: 4, desc: "Foundation", budgeted: 27300, authorized: 27300, available: 0, pct: 100},
                 {seq: 5, desc: "Steam Wall", budgeted: 1500, authorized: 1500, available: 0, pct: 100},
                 {seq: 6, desc: "Masonry & Framing", budgeted: 14900, authorized: 14155, available: 745, pct: 95},
-                {seq: 7, desc: "Roof (including soffit/fascia & gutters)", budgeted: 10200, authorized: 8160, available: 2040, pct: 80},
+                {seq: 7, desc: "Roof (including soffit/fascia & gutters)", budgeted: 10200, authorized: 0, available: 10200, pct: 0},
                 {seq: 8, desc: "Exterior/Siding/Stucco", budgeted: 9200, authorized: 0, available: 9200, pct: 0},
-                {seq: 9, desc: "Windows/Exterior Doors", budgeted: 6100, authorized: 4880, available: 1220, pct: 80},
+                {seq: 9, desc: "Windows/Exterior Doors", budgeted: 6100, authorized: 4812.20, available: 1287.80, pct: 78.89},
                 {seq: 10, desc: "Plumbing - Underslab", budgeted: 4500, authorized: 4500, available: 0, pct: 100},
                 {seq: 11, desc: "Plumbing - Rough", budgeted: 9500, authorized: 8750, available: 750, pct: 92.1},
                 {seq: 12, desc: "Plumbing - Finish", budgeted: 3600, authorized: 0, available: 3600, pct: 0},
@@ -641,7 +641,7 @@
                 {seq: 29, desc: "Pavers Driveway", budgeted: 7900, authorized: 0, available: 7900, pct: 0},
                 {seq: 30, desc: "Landscaping", budgeted: 5300, authorized: 0, available: 5300, pct: 0},
                 {seq: 31, desc: "Final Clean", budgeted: 400, authorized: 0, available: 400, pct: 0},
-                {seq: 32, desc: "Contingency", budgeted: 23570, authorized: 10842.20, available: 12727.80, pct: 46}
+                {seq: 32, desc: "Contingency", budgeted: 5500, authorized: 0, available: 5500, pct: 0}
             ]
         };
 
